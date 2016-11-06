@@ -6,7 +6,7 @@
 
 
 // Our variables
-$base-font-family: Helvetica, Arial, sans-serif;
+$base-font-family: Lato, Helvetica, Arial, sans-serif;
 $base-font-size:   16px;
 $small-font-size:  $base-font-size * 0.875;
 $base-line-height: 1.5;
@@ -17,13 +17,16 @@ $text-color:       #111;
 $background-color: #fdfdfd;
 $brand-color:      #2a7ae2;
 
-$grey-color:       #828282;
+$grey-color:       #DFE1DC;
 $grey-color-light: lighten($grey-color, 40%);
-$grey-color-dark:  darken($grey-color, 25%);
+$grey-color-dark:  darken($grey-color, 55%);
+$purple-color:     #876776;
+$purple-color-dark: darken($purple-color, 10%);
 
 $on-palm:          600px;
 $on-laptop:        800px;
 
+$site-width:       960px;
 
 
 // Using media queries with like this:
@@ -45,5 +48,4 @@ $on-laptop:        800px;
 @import
         "base",
         "layout",
-        "syntax-highlighting"
-;
+        "details";

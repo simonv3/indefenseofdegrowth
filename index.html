@@ -4,20 +4,47 @@ layout: default
 
 <div class="home">
 
-  <h1 class="page-heading">Posts</h1>
+  <div class="left">
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+    <h1 class="page-heading">27 Essays and Thoughts on Degrowth</h1>
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
+    <h2 class="authors">By Giorgos Kallis<br/> Edited by Aaron Vansintjan</h2>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+    <div class="blurb">
 
+      <p>
+        Neque enim cum nostrum aut aut nisi. Repellendus incidunt minima inventore nihil neque sequi. Similique fugit sint autem consequatur dicta. Consequuntur quasi possimus quam suscipit quo tenetur. Voluptas et voluptates dolores nam consequatur perspiciatis consequuntur. Quae incidunt id hic eius et sint.
+      </p>
+      <p>
+        Dolores consequuntur tenetur labore a assumenda iure. Qui nulla magni nemo. Eius quia et nemo id. Delectus illo magnam quae velit. Ut beatae recusandae cumque nobis pariatur qui consequatur et. Est veritatis et est eligendi et ut natus.
+      </p>
+    </div>
+
+    <form class="buy"
+      name="_xclick"
+      action="https://www.paypal.com/us/cgi-bin/webscr"
+      method="post">
+      <input type="hidden" name="cmd" value="_xclick" />
+      <input type="hidden" name="business" value="<PAYPAL_EMAIL>" />
+      <input type="hidden" name="currency_code" value="USD" />
+      <input type="hidden" name="item_name" value="In defense of degrowth - eBook" />
+      <input type="number"
+        name="amount"
+        value="5.00"
+        placeholder="Choose Amount in USD"/>
+      <button type="submit"
+        class="buy-with-paypal submit"
+        name="submit"
+        alt="Pay with PayPal">Pay With PayPal</button>
+      <a
+        class="download-free submit"
+        name="submit"
+        href="/public/cover.jpg"
+        alt="Pay with PayPal">Download For Free</a>
+      <p>$5.00 recommended price</p>
+    </form>
+  </div>
+  <div class="image">
+  <img src="/public/cover.jpg"/>
+  </div>
 </div>

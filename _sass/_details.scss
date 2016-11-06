@@ -1,0 +1,70 @@
+.home {
+  margin-top: 2rem;
+}
+
+
+h1 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.buy {
+  margin-top: 2rem;
+}
+
+input[name="amount"] {
+  background: $grey-color;
+  border: 1px solid darken($grey-color, 10%);
+  border-radius: 2px;
+  font-size: 1rem;
+  padding: .5rem .75rem;
+  text-align: center;
+}
+
+.submit {
+  background: $purple-color;
+  border: 1px solid $purple-color-dark;
+  border-radius: 2px;
+  font-size: 1rem;
+  padding: .5rem .75rem;
+  color: $grey-color;
+  min-width: 180px;
+  text-align: center;
+  font-weight: 400;
+  font-family: Lato, Helvetica, Arial;
+}
+
+.buy .download-free {
+  display: none;
+}
+
+.buy.free .download-free {
+  display: inline-block;
+  color: $grey-color;
+  line-height: 1.2;
+}
+
+.free .buy-with-paypal {
+  display: none;
+}
+
+/**
+ * Main
+ */
+.left {
+    float: left;
+    width: 50%;
+}
+
+.image {
+  width: 40%;
+  display: inline-block;
+  margin-left: 9%;
+  margin-top: 5rem;
+  box-shadow: 0 2px 4px #828282;
+}
