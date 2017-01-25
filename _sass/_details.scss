@@ -9,8 +9,8 @@ h1 {
 }
 
 h2 {
-  font-size: 1rem;
-  font-weight: 300;
+  font-size: 1.2rem;
+  font-weight: bold;
 }
 
 .buy {
@@ -66,4 +66,26 @@ input[name="amount"] {
   display: inline-block;
   margin-left: 9%;
   margin-top: 5rem;
+
+  .book-cover {
+    display: block;
+    width: 100%;
+    height: 33rem;
+    background-position: center;
+    background-size: 198%;
+    background-repeat: no-repeat;
+  }
+}
+
+/**
+ * Book Page
+ */
+
+.book {
+  width: 600px;
+  p {
+    font-family: Georgia, serif;
+    font-size: 1.2rem;
+    line-height: 1.5;
+  }
 }
