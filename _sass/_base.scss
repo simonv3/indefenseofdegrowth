@@ -96,7 +96,9 @@ h1, h2, h3, h4, h5, h6 {
  */
 a {
     color: $brand-color;
+    font-weight: bold;
     text-decoration: none;
+    transition: .2s;
 
     &:visited {
         color: darken($brand-color, 15%);
@@ -104,6 +106,7 @@ a {
 
     &:hover {
         color: $text-color;
+        background-color: $grey-color;
     }
 }
 

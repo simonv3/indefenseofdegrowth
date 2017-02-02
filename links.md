@@ -5,7 +5,7 @@ permalink: /links/
 in_header: true
 ---
 
-<ul>
+<ul class="links">
   <li>
     <a href="http://www.degrowth.eu" title="Research and Degrowth site">Research &amp; Degrowth</a>
   </li>
@@ -23,6 +23,6 @@ in_header: true
     <a href="http://ictaweb.uab.cat/personal_detail.php?id=34" title="Giorgos Kallis profile">About Giorgos Kallis</a>
   </li>
   <li>
-    Follow <a href="https://twitter.com/g_kallis" title="Giorgos Kallis on twitter">Giorgos Kallis on Twitter</a>
+    <a href="https://twitter.com/g_kallis" title="Giorgos Kallis on twitter">Twitter</a>
   </li>
 </ul>

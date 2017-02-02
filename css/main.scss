@@ -15,13 +15,15 @@ $spacing-unit:     30px;
 
 $text-color:       #111;
 $background-color: #fdfdfd;
-$brand-color:      #2a7ae2;
 
 $grey-color:       #DFE1DC;
 $grey-color-light: lighten($grey-color, 40%);
 $grey-color-dark:  darken($grey-color, 55%);
 $purple-color:     #876776;
 $purple-color-dark: darken($purple-color, 10%);
+$purple-color-light: lighten($purple-color, 10%);
+
+$brand-color:      $purple-color-light;
 
 $on-palm:          600px;
 $on-laptop:        800px;

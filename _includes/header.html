@@ -13,13 +13,59 @@
         </svg>
       </a>
 
-      <div class="trigger">
-        {% for page in site.pages %}
-          {% if page.title and page.in_header == true %}
-          <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
-          {% endif %}
-        {% endfor %}
-      </div>
+      <ul class="trigger">
+        <li>
+          <a class="page-link" href="/" title="home">
+            Home
+          </a>
+        </li>
+
+        <li>
+          <a class="page-link" href="/press/" title="press">
+          Press
+          </a>
+          <ul>
+            <li>
+              <a class="page-link" href="/press/arturo-escobar-review" title="Review by Arturo Escobar">
+                Review by Arturo Escobar
+              </a>
+            </li>
+          </ul>
+        </li>
+
+        <li>
+          <a class="page-link" href="/book/table-of-contents/" title="Book contents">
+            What's Inside
+          </a>
+          <ul>
+            <li>
+                <a class="page-link" href="/book/table-of-contents" title="Table of Contents">
+                  Table of Contents
+                </a>
+              </li>
+              <li>
+                <a class="page-link" href="/book/chapter-3/" title="The left should embrace degrowth">
+                  The left should embrace degrowth.
+                </a>
+              </li>
+              <li>
+                <a class="page-link" href="/book/chapter-8/" title="The battle for Harvard, or, how economics became economics">
+                  The battle for Harvard, or, how economics became economics.
+                </a>
+              </li>
+              <li>
+                <a class="page-link" href="/book/chapter-18/" title="The sharing economy is not a commons">
+                  The sharing economy is not a commons.
+                </a>
+              </li>
+              <li>
+                <a class="page-link" href="/links/" title="links">
+                  Links
+                </a>
+              </li>
+            </ul>
+        </li>
+      </ul>
     </nav>
 
   </div>

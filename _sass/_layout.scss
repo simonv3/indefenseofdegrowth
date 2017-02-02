@@ -96,6 +96,40 @@
 
 
 /**
+ * Header
+ */
+
+nav > ul > li {
+  display: inline-block;
+  background-color: $grey-color;
+}
+nav > ul > li ul {
+  visibility: hidden;
+  position: absolute;
+  top: 105%;
+  left: 0;
+  /*transition: 0.2s 1s;*/
+  width: 200%;
+  background-color: $grey-color;
+}
+nav > ul > li:hover ul {
+  visibility: visible;
+  transition-delay: 0s;
+}
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+nav li {
+  margin: 2px;
+  position: relative;
+}
+nav a {
+  display: block;
+}
+
+/**
  * Page content
  */
 .page-content {
