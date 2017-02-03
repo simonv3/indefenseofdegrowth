@@ -1,6 +1,10 @@
 .home {
   margin-top: 2rem;
 
+  @include media-query($on-palm) {
+    margin-top: 0;
+  }
+
   .praise {
     margin-top: 4rem;
   }
@@ -9,6 +13,10 @@
 h1 {
   font-size: 2rem;
   font-weight: bold;
+
+  @include media-query($on-palm) {
+    font-size: 1.7rem;
+  }
 }
 
 h2 {
@@ -78,8 +86,12 @@ input[name="amount"] {
  * Main
  */
 .left {
-    float: left;
-    width: 50%;
+  float: left;
+  width: 50%;
+
+  @include media-query($on-palm) {
+    width: 100%;
+  }
 }
 
 .image {
@@ -87,6 +99,12 @@ input[name="amount"] {
   display: inline-block;
   margin-left: 9%;
   margin-top: 5rem;
+
+  @include media-query($on-palm) {
+    margin-top: 0;
+    margin-left: 0;
+    width: 100%;
+  }
 
   .book-cover {
     display: block;
@@ -103,8 +121,12 @@ input[name="amount"] {
  */
 
 .center {
-  width: 640px;
+  max-width: 640px;
   margin: 0 auto;
+
+  @include media-query($on-palm) {
+    width: auto;
+  }
 
   h2 {
     font-size: 1.5em;
@@ -138,7 +160,12 @@ input[name="amount"] {
  */
 
 .book {
-  width: 600px;
+  max-width: 640px;
+
+  @include media-query($on-palm) {
+    width: auto;
+  }
+
   p {
     font-family: Georgia, serif;
     font-size: 1.2rem;

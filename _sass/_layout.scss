@@ -51,12 +51,22 @@
 
     @include media-query($on-palm) {
         position: absolute;
-        top: 9px;
-        right: 30px;
+        top: 14px;
+        right: 10px;
         background-color: $background-color;
         border: 1px solid $grey-color-light;
         border-radius: 5px;
         text-align: right;
+
+        &:hover {
+          width: 100%;
+          width: 100%;
+          padding: 14px;
+          top: 0;
+          right: 0;
+          background-color: $grey-color;
+          border-radius: 0;
+        }
 
         .menu-icon {
             display: block;
@@ -64,7 +74,7 @@
             width: 36px;
             height: 26px;
             line-height: 0;
-            padding-top: 10px;
+            padding-top: 5px;
             text-align: center;
 
             > svg {
@@ -89,7 +99,7 @@
 
         .page-link {
             display: block;
-            padding: 5px 10px;
+            padding: .5rem 1rem;
         }
     }
 }
@@ -102,19 +112,36 @@
 nav > ul > li {
   display: inline-block;
   background-color: $grey-color;
+
+  @include media-query($on-palm) {
+    display: block;
+  }
 }
 nav > ul > li ul {
   visibility: hidden;
   position: absolute;
   top: 105%;
   left: 0;
-  /*transition: 0.2s 1s;*/
   width: 200%;
   background-color: $grey-color;
+  font-size: 1rem;
+
+  @include media-query($on-palm) {
+    left: auto;
+    right: 0;
+    top: 100%;
+    width: 100%;
+  }
 }
-nav > ul > li:hover ul {
+
+nav > ul > li ul a {
+  transition: 0s;
+}
+nav > ul > li:hover ul,
+nav > ul > li:active ul,
+nav > ul > li:focus ul {
   visibility: visible;
-  /*transition-delay: 0s;*/
+  transition-delay: 0s;
 }
 nav ul {
   list-style: none;
@@ -124,6 +151,10 @@ nav ul {
 nav li {
   margin: 2px;
   position: relative;
+
+  @include media-query($on-palm) {
+    position: initial;
+  }
 }
 nav a {
   display: block;
