@@ -1,0 +1,55 @@
+---
+layout: default
+permalink: /donate/
+---
+
+<div class="home donate">
+
+  <div class="left">
+
+    <h1 class="page-heading">27 Essays and Thoughts on Degrowth</h1>
+
+    <h3 class="authors">By Giorgos Kallis
+      <div class="editor">Edited by Aaron Vansintjan</div>
+    </h3>
+
+    <div class="blurb">
+
+      <p>
+        Already have the book and want to donate?
+      </p>
+      <form class="buy"
+        name="_xclick"
+        action="https://www.paypal.com/us/cgi-bin/webscr"
+        method="post">
+
+        <input type="hidden" name="cmd" value="_xclick" />
+        <input type="hidden" name="business" value="indefenseofdegrowth@gmail.com" />
+        <input type="hidden" name="currency_code" value="USD" />
+        <input type="hidden" name="item_name" value="In defense of degrowth - eBook" />
+        <input type="number"
+          name="amount"
+          value="5.00"
+          placeholder="Choose Amount in USD"/>
+        <button type="submit"
+          class="buy-with-paypal submit"
+          name="submit"
+          alt="Pay with PayPal">Donate With PayPal</button>
+        <a
+          class="download-free submit"
+          name="submit"
+          href="{{ "/download/?from=free" | prepend: site.baseurl }}"
+          alt="Download for free">Download For Free</a>
+        <p>$5.00 recommended donation</p>
+      </form>
+      <p>
+        <small><em>This book is published as an Open Commons and made available free or by donation. Editing and formatting took four months of work. To get the book, simply enter the desired amount (US$ 0-whatever) above and click the button. You can also support us by writing a review on <a href="https://www.goodreads.com/book/show/34115163-in-defense-of-degrowth">Goodreads</a>.</em></small>
+      </p>
+    </div>
+  </div>
+  <div class="image">
+    <div class="book-cover" style="background-image: url({{ "/public/cover_design_3d.png" | prepend: site.baseurl }})"></div>
+  </div>
+</div>
+<script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+    <!--End mc_embed_signup-->
