@@ -21,18 +21,18 @@
         </li>
 
         <li>
-          <a class="page-link" href="/donate" title="donate">
-            Donate
+          <a class="page-link" href="{% link contribute.html %}" title="contribute">
+            Contribute
           </a>
         </li>
 
         <li>
-          <a class="page-link" href="/press/" title="press">
+          <a class="page-link" href="{% link press.html %}" title="press">
           Press
           </a>
           <ul>
             <li>
-              <a class="page-link" href="/press/arturo-escobar-review" title="Review by Arturo Escobar">
+              <a class="page-link" href="{% link press-review-of-book.html %}" title="Review by Arturo Escobar">
                 Review by Arturo Escobar
               </a>
             </li>
@@ -40,32 +40,35 @@
         </li>
 
         <li>
-          <a class="page-link" title="Book contents">
+          <label class="page-link"
+            title="Book contents dropdown"
+            for="whats-inside">
             What's Inside
-          </a>
+          </label>
+          <input type="checkbox" id="whats-inside"/>
           <ul>
             <li>
-                <a class="page-link" href="/book/table-of-contents" title="Table of Contents">
+                <a class="page-link" href="{% link book/whats-inside.md %}" title="Table of Contents">
                   Table of Contents
                 </a>
               </li>
               <li>
-                <a class="page-link" href="/book/chapter-3/" title="The left should embrace degrowth">
+                <a class="page-link" href="{% link book/chapter-3.md %}" title="The left should embrace degrowth">
                   The left should embrace degrowth
                 </a>
               </li>
               <li>
-                <a class="page-link" href="/book/chapter-8/" title="The battle for Harvard, or, how economics became economics">
+                <a class="page-link" href="{% link book/chapter-8.md %}" title="The battle for Harvard, or, how economics became economics">
                   The battle for Harvard, or, how economics became economics
                 </a>
               </li>
               <li>
-                <a class="page-link" href="/book/chapter-18/" title="The sharing economy is not a commons">
+                <a class="page-link" href="{% link book/chapter-18.md %}" title="The sharing economy is not a commons">
                   The sharing economy is not a commons
                 </a>
               </li>
               <li>
-                <a class="page-link" href="/links/" title="links">
+                <a class="page-link" href="{% link links.md %}" title="links">
                   Links
                 </a>
               </li>

@@ -36,6 +36,18 @@
       if (from === 'paypal') {
         $('body').prepend('<div class="payment-made"><p>Thanks for your payment!</p><small>Submit your e-mail address and we\'ll send you the book.</small></div>');
       }
+
+      $('form.buy').css('display', 'none');
+
+      $('.download-pop-down').click(function (e) {
+        var link = $('.download-pop-down');
+        if (link.hasClass('open')) {
+          link.removeClass('open');
+        } else {
+          link.addClass('open');
+        }
+        $('form.buy').toggle();
+      });
     });
 
     var getUrlParameter = function  getUrlParameter(sParam) {

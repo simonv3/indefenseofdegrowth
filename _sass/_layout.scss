@@ -37,6 +37,7 @@
         line-height: $base-line-height;
         text-decoration: none;
         padding: .5rem .75rem;
+        font-weight: 600;
 
         // Gaps between nav items, but not on the first one
         &:not(:first-child) {
@@ -132,6 +133,13 @@ nav > ul > li ul {
     top: 100%;
     width: 100%;
   }
+}
+
+nav > ul > li input[type=checkbox] {
+  display: none;
+}
+nav > ul > li input:checked + ul {
+  visibility: visible;
 }
 
 nav > ul > li ul a {

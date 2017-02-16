@@ -28,10 +28,6 @@ h3 .editor {
   font-size: 1.2rem;
 }
 
-.buy {
-  margin-top: 2rem;
-}
-
 input[name="amount"] {
   background: $grey-color;
   border: 1px solid darken($grey-color, 10%);
@@ -115,6 +111,38 @@ input[name="amount"] {
     background-repeat: no-repeat;
   }
 }
+
+.download-pop-down {
+  cursor: pointer;
+  margin: 2rem 0;
+  display: block;
+
+  i::before {
+    content: '\25B6';
+    display: inline-block;
+    margin-right: 4px;
+    font-style: normal;
+    transition: .5s;
+  }
+
+  &.open {
+    i::before {
+      transform: rotate(90deg);
+    }
+  }
+}
+
+.buy {
+  margin: 1rem 0;
+  padding: 1rem;
+  background-color: lighten($grey-color, 5%);
+
+  > p {
+    margin-top: 1rem;
+    margin-bottom: 0;
+  }
+}
+
 
 /**
  * Press Page
