@@ -1,0 +1,25 @@
+<form class="buy"
+  name="_xclick"
+  action="https://www.paypal.com/us/cgi-bin/webscr"
+  method="post">
+
+  <input type="hidden" name="cmd" value="_xclick" />
+  <input type="hidden" name="business" value="indefenseofdegrowth@gmail.com" />
+  <input type="hidden" name="currency_code" value="USD" />
+  <input type="hidden" name="item_name" value="In defense of degrowth - eBook" />
+  <input type="number"
+    name="amount"
+    value="3.00"
+    placeholder="Choose Amount in USD"/>
+  <button type="submit"
+    class="buy-with-paypal submit"
+    name="submit"
+    alt="Contribute with PayPal"
+    title="Contribute with PayPal: ">Contribute &amp; Download</button>
+  <a
+    class="download-free submit"
+    name="submit"
+    href="{{ "/download/?from=free" | prepend: site.baseurl }}"
+    alt="Download for free">Download For Free</a>
+  <p class="download-book-extra">$5.00 recommended price, enter 0 if you want to download the book for free. We use PayPal for processing payments, but you do not need a PayPal account to make a contribution.</p>
+</form>

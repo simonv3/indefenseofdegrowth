@@ -12,61 +12,42 @@ layout: default
 
     <div class="blurb">
       <p>
-        The idea of degrowth is contentious, often misunderstood, and (perhaps paradoxically) growing in popularity. In this book, Giorgos Kallis, one of the movement's leading thinkers, presents an accessible, inspiring, and enjoyable defense. The book's chapters—a compilation of his opinion essays, newspaper articles, blog posts, and 'minifestos'—range from topics such as eco-modernism, the history of economics, science fiction, the Greek crisis, and Hollywood films. The book also features debates and exchanges between Kallis and degrowth detractors. In defense of degrowth intended as an introduction for the curious, a defense against the skeptics, and an intellectually stimulating conversation for those already convinced but willing to learn more.
-      </p>
-
-      <p>
-        Kallis is a citizen of Greece, professor at the Autonomous University of Barcelona, publisher of over 50 peer-reviewed journal articles, and an active member of the group <a href="http://degrowth.eu" title="Research and Degrowth website">Research &amp; Degrowth</a>.
+        The idea of degrowth is contentious, often misunderstood, and (perhaps paradoxically) growing in popularity. In this book, Giorgos Kallis, one of the movement's leading thinkers, presents an accessible, inspiring, and enjoyable defense. The book's chapters—a compilation of his opinion essays, newspaper articles, blog posts, and 'minifestos'—range from topics such as eco-modernism, the history of economics, science fiction, the Greek crisis, and Hollywood films. The book also features debates and exchanges between Kallis and degrowth detractors. <em>In defense of degrowth</em> is intended as an introduction for the curious, a defense against the skeptics, and an intellectually stimulating conversation for those already convinced but willing to learn more.
       </p>
     </div>
 
-    <p>
-      <a class="download-pop-down">
-        <i class="pop-down"></i>Download the e-book
-      </a>
+    <a class="download-pop-down">
+      <i class="pop-down"></i>Download the e-book
+    </a>
+
+    {% include download-book.html %}
+    <p class="already-own">
+      Already have the book? You can still <a href="/contribute/" title="contribute">contribute</a>.
     </p>
-
-    <form class="buy"
-      name="_xclick"
-      action="https://www.paypal.com/us/cgi-bin/webscr"
-      method="post">
-
-      <input type="hidden" name="cmd" value="_xclick" />
-      <input type="hidden" name="business" value="indefenseofdegrowth@gmail.com" />
-      <input type="hidden" name="currency_code" value="USD" />
-      <input type="hidden" name="item_name" value="In defense of degrowth - eBook" />
-      <input type="number"
-        name="amount"
-        value="3.00"
-        placeholder="Choose Amount in USD"/>
-      <button type="submit"
-        class="buy-with-paypal submit"
-        name="submit"
-        alt="Contribute with PayPal"
-        title="Contribute with PayPal: ">Contribute &amp; Download</button>
-      <a
-        class="download-free submit"
-        name="submit"
-        href="{{ "/download/?from=free" | prepend: site.baseurl }}"
-        alt="Download for free">Download For Free</a>
-      <p>$5.00 recommended price, enter 0 if you want to download the book for free. We use PayPal for processing payments, but you do not need a PayPal account to make a contribution.</p>
-    </form>
-
-    <p>
-      Already have the book? You can still <a href="/donate/" title="donate">contribute</a>.
-    </p>
-    <p>
-      <small><em>This book is published as an Open Commons and made available free or by donation. Editing and formatting took four months of work. To get the book, simply enter the desired amount (US$ 0-whatever) above and click the button. You can also support us by writing a review on <a href="https://www.goodreads.com/book/show/34115163-in-defense-of-degrowth">Goodreads</a>.</em></small>
-    </p>
-
+    {% include download-book-small-text.html %}
     <div class="praise">
-    <h2>Praise for In defense of degrowth</h2>
+      <h2>Praise for <em>In defense of degrowth</em></h2>
       <p class="quote">
-        “In defense of degrowth … shows why its author, and the Barcelona group to which he belongs, have become the indisputable world leaders in the vital project of crafting novel economic imaginaries and feasible frameworks for an age where, literally, everything has to change.”
+        “a mix of engaging commentary, bold analysis, and creative policy tools certain to deepen your thinking.”
 
-        <span class="author">— Arturo Escobar, Professor of Anthropology, University of North Carolina, Chapel Hill. Author of <em>Encountering Development: The Making and Unmaking of the Third World and Feel-thinking with the Earth.</em></span>
+        <span class="author">— <strong>Naomi Klein</strong>
       </p>
-      </div>
+      <p class="quote">
+        “..crafting novel economic imaginaries and feasible frameworks for an age where, literally, everything has to change”
+
+        <span class="author">— <strong>Arturo Escobar</strong>
+      </p>
+    </div>
+
+    <div class="center about-the-author">
+      <h2>About the author</h2>
+
+      <img src="/public/giorgos-kallis.jpg" alt="Giorgos Kallis"/>
+
+      <br/><br/>
+
+      <p>Kallis is a citizen of Greece, professor at the Autonomous University of Barcelona, publisher of over 50 peer-reviewed journal articles, and an active member of the group <a href="http://degrowth.org" title="Research and Degrowth website">Research &amp; Degrowth</a></p>
+    </div>
   </div>
   <div class="image">
     <div class="book-cover" style="background-image: url({{ "/public/cover_design_3d.png" | prepend: site.baseurl }})"></div>

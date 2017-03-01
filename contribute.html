@@ -15,36 +15,11 @@ permalink: /contribute/
 
     <div class="blurb">
 
-      <p>
+      <p class="already-own">
         Already have the book and still want to contribute?
       </p>
-      <form class="buy"
-        name="_xclick"
-        action="https://www.paypal.com/us/cgi-bin/webscr"
-        method="post">
-
-        <input type="hidden" name="cmd" value="_xclick" />
-        <input type="hidden" name="business" value="indefenseofdegrowth@gmail.com" />
-        <input type="hidden" name="currency_code" value="USD" />
-        <input type="hidden" name="item_name" value="In defense of degrowth - eBook" />
-        <input type="number"
-          name="amount"
-          value="5.00"
-          placeholder="Choose Amount in USD"/>
-        <button type="submit"
-          class="buy-with-paypal submit"
-          name="submit"
-          alt="Pay with PayPal">Contribute</button>
-        <a
-          class="download-free submit"
-          name="submit"
-          href="{{ "/download/?from=free" | prepend: site.baseurl }}"
-          alt="Download for free">Download For Free</a>
-        <p>$5.00 recommended contribution</p>
-      </form>
-      <p>
-        <small><em>This book is published as an Open Commons and made available free or by contribution. Editing and formatting took four months of work. To get the book, simply enter the desired amount (US$ 0-whatever) above and click the button. You can also support us by writing a review on <a href="https://www.goodreads.com/book/show/34115163-in-defense-of-degrowth">Goodreads</a>.</em></small>
-      </p>
+      {% include download-book.html %}
+      {% include download-book-small-text.html %}
     </div>
   </div>
   <div class="image">

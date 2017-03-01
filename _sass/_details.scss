@@ -11,7 +11,7 @@
 }
 
 h1 {
-  font-size: 2rem;
+  font-size: 1.7rem;
   font-weight: bold;
 
   @include media-query($on-palm) {
@@ -114,8 +114,11 @@ input[name="amount"] {
 
 .download-pop-down {
   cursor: pointer;
-  margin: 2rem 0;
+  margin: 2rem 0 0;
   display: block;
+  background-color: lighten($grey-color, 5%);
+  padding: 1rem;
+  font-size: 1.2rem;
 
   i::before {
     content: '\25B6';
@@ -132,14 +135,24 @@ input[name="amount"] {
   }
 }
 
+.already-own {
+  margin-top: 1rem;
+}
+
 .main .buy {
-  margin: 1rem 0;
+  margin: 0 0 1rem;
   padding: 1rem;
   background-color: lighten($grey-color, 5%);
 
   > p {
     margin-top: 1rem;
     margin-bottom: 0;
+  }
+}
+
+.center.about-the-author {
+  h2 {
+    margin-bottom: 1rem;
   }
 }
 
@@ -181,6 +194,10 @@ input[name="amount"] {
     text-align: right;
     font-size: 1rem;
   }
+
+  .main & .author {
+    margin-top: .5rem;
+  }
 }
 
 /**
@@ -201,6 +218,9 @@ input[name="amount"] {
   }
 }
 
+.download-book-extra {
+  margin-top: .5rem;
+}
 
 /**
  * Links

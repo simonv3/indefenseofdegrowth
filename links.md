@@ -7,7 +7,7 @@ in_header: true
 
 <ul class="links">
   <li>
-    <a href="http://www.degrowth.eu" title="Research and Degrowth site">Research &amp; Degrowth</a>
+    <a href="http://www.degrowth.org" title="Research and Degrowth site">Research &amp; Degrowth</a>
   </li>
   <li>
     <a href="http://www.degrowth.de/en/media-library/" title="Degrowth Media Library">Degrowth Media Library</a>
