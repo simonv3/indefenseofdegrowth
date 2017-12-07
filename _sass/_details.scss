@@ -112,7 +112,8 @@ input[name="amount"] {
   }
 }
 
-.download-pop-down {
+.download-pop-down,
+.purchase-pop-down {
   cursor: pointer;
   margin: 2rem 0 0;
   display: block;
@@ -125,7 +126,7 @@ input[name="amount"] {
     display: inline-block;
     margin-right: 4px;
     font-style: normal;
-    transition: .5s;
+    transition: .2s;
   }
 
   &.open {
@@ -139,7 +140,8 @@ input[name="amount"] {
   margin-top: 1rem;
 }
 
-.main .buy {
+.main .buy,
+.main .buy-physical {
   margin: 0 0 1rem;
   padding: 1rem;
   background-color: lighten($grey-color, 5%);
