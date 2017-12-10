@@ -42,6 +42,7 @@
       }
 
       $('.main form.buy').css('display', 'none');
+      $('.main form.buy-physical').css('display', 'none');
 
       $('.download-pop-down').click(function (e) {
         var link = $('.download-pop-down');
@@ -51,6 +52,16 @@
           link.addClass('open');
         }
         $('form.buy').toggle();
+      });
+
+      $('.purchase-pop-down').click(function (e) {
+        var link = $('.purchase-pop-down');
+        if (link.hasClass('open')) {
+          link.removeClass('open');
+        } else {
+          link.addClass('open');
+        }
+        $('form.buy-physical').toggle();
       });
 
       $('#mc-embedded-subscribe').click(function (e) {
