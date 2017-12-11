@@ -94,7 +94,7 @@ input[name="amount"] {
   width: 40%;
   display: inline-block;
   margin-left: 9%;
-  margin-top: 5rem;
+  margin-top: 0;
 
   @include media-query($on-palm) {
     margin-top: 0;
